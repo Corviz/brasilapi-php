@@ -1,0 +1,15 @@
+{
+    "name": "corviz/brasilapi-php",
+    "description": "A PHP SDK for BrasilAPI",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Corviz\\BrasilAPI\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

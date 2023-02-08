@@ -4,6 +4,12 @@ namespace Corviz\BrasilAPI\Data;
 
 class BankData extends BaseData
 {
+    /**
+     * @param string $ispb
+     * @param string $name
+     * @param int|null $code
+     * @param string $fullName
+     */
     public function __construct(
         public readonly string $ispb,
         public readonly string $name,

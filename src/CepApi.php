@@ -7,7 +7,7 @@ use Corviz\BrasilAPI\Data\GeoLocationData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 
-class Cep extends ApiConsumer
+class CepApi extends ApiConsumer
 {
     /**
      * Fetch CEP (ZIP) code info without coordinates.

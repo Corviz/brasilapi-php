@@ -36,7 +36,7 @@ class BankApi extends ApiConsumer
     public static function get(int $code): ?BankData
     {
         $response = static::getClient()->get("banks/v1/$code");
-        $data = [];
+        $data = null;
 
         if ($responseData = self::parseJson($response)) {
             $data = BankData::from($responseData);

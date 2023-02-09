@@ -15,6 +15,7 @@ class HolidayData extends BaseData
         public readonly DateTimeImmutable $date,
         public readonly string $name,
         public readonly string $type,
+        public readonly ?string $fullName = null,
     ) {
     }
 }

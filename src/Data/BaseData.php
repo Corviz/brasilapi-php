@@ -18,7 +18,14 @@ class BaseData implements ArrayAccess, JsonSerializable
     public static function from(array $data): static
     {
         $r = new ReflectionClass(static::class);
-        return $r->newInstanceArgs($data);
+
+        $attrNames = [];
+        foreach ($r->getProperties() as $attribute) {
+            $attrNames[] = $attribute->getName();
+        }
+
+        $constructorArgs = array_intersect_key($data, array_flip($attrNames));
+        return $r->newInstanceArgs($constructorArgs);
     }
 
     /**

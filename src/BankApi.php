@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\BankData;
+use Corviz\BrasilAPI\Data\BankApi\BankData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 

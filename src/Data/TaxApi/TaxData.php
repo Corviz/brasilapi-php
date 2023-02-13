@@ -1,6 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\TaxApi;
+
+use Corviz\BrasilAPI\Data\BaseData;
 
 class TaxData extends BaseData
 {

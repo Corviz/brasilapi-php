@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\TaxData;
+use Corviz\BrasilAPI\Data\TaxApi\TaxData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 

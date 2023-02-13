@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\CnaeData;
-use Corviz\BrasilAPI\Data\CnpjData;
-use Corviz\BrasilAPI\Data\QsaData;
+use Corviz\BrasilAPI\Data\CnpjApi\CnaeData;
+use Corviz\BrasilAPI\Data\CnpjApi\CnpjData;
+use Corviz\BrasilAPI\Data\CnpjApi\QsaData;
 use Corviz\BrasilAPI\Traits\ConvertsSnakeKeysToCamel;
 use Corviz\BrasilAPI\Traits\ConvertsStringToDateTime;
 use GuzzleHttp\Exception\GuzzleException;

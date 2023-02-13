@@ -1,7 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\HolidayApi;
 
+use Corviz\BrasilAPI\Data\BaseData;
 use DateTimeImmutable;
 
 class HolidayData extends BaseData

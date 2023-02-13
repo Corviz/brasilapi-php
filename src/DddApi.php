@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\DddData;
+use Corviz\BrasilAPI\Data\DddApi\DddData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 

@@ -2,8 +2,8 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\CepData;
-use Corviz\BrasilAPI\Data\GeoLocationData;
+use Corviz\BrasilAPI\Data\CepApi\CepData;
+use Corviz\BrasilAPI\Data\CepApi\GeoLocationData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 

@@ -1,6 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\CnpjApi;
+
+use Corviz\BrasilAPI\Data\BaseData;
 
 class CnaeData extends BaseData
 {

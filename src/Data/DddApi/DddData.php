@@ -1,6 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\DddApi;
+
+use Corviz\BrasilAPI\Data\BaseData;
 
 class DddData extends BaseData
 {

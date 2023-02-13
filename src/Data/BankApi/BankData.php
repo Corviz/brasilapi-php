@@ -1,6 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\BankApi;
+
+use Corviz\BrasilAPI\Data\BaseData;
 
 class BankData extends BaseData
 {

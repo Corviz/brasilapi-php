@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI;
 
-use Corviz\BrasilAPI\Data\HolidayData;
+use Corviz\BrasilAPI\Data\HolidayApi\HolidayData;
 use DateTimeImmutable;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;

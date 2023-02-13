@@ -1,6 +1,8 @@
 <?php
 
-namespace Corviz\BrasilAPI\Data;
+namespace Corviz\BrasilAPI\Data\CepApi;
+
+use Corviz\BrasilAPI\Data\BaseData;
 
 class CepData extends BaseData
 {

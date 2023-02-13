@@ -13,6 +13,8 @@ class CepApi extends ApiConsumer
      * Fetch CEP (ZIP) code info without coordinates.
      *
      * @param string $number
+     * @param bool $withLocation
+     *
      * @return CepData|null
      * @throws GuzzleException
      * @throws ReflectionException

@@ -6,13 +6,13 @@ use Corviz\BrasilAPI\Data\CnpjApi\CnaeData;
 use Corviz\BrasilAPI\Data\CnpjApi\CnpjData;
 use Corviz\BrasilAPI\Data\CnpjApi\QsaData;
 use Corviz\BrasilAPI\Traits\ConvertsSnakeKeysToCamel;
-use Corviz\BrasilAPI\Traits\ConvertsStringToDateTime;
+use DateTimeImmutable;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 
 class CnpjApi extends ApiConsumer
 {
-    use ConvertsSnakeKeysToCamel, ConvertsStringToDateTime;
+    use ConvertsSnakeKeysToCamel;
 
     private const DATE_FIELDS = [
         'dataSituacaoCadastral',
@@ -47,7 +47,9 @@ class CnpjApi extends ApiConsumer
             if (!empty($responseData['qsa'])) {
                 foreach ($responseData['qsa'] as &$item) {
                     !empty($item['dataEntradaSociedade'])
-                    && $item['dataEntradaSociedade'] = self::convertDateStrToDateTime($item['dataEntradaSociedade']);
+                    && $item['dataEntradaSociedade'] = DateTimeImmutable::createFromFormat(
+                        "Y-m-d P", $item['dataEntradaSociedade'].' -03:00'
+                    );
 
                     $item = QsaData::from($item);
                 }
@@ -55,7 +57,9 @@ class CnpjApi extends ApiConsumer
 
             foreach (self::DATE_FIELDS as $field) {
                 !empty($responseData[$field])
-                && $responseData[$field] = self::convertDateStrToDateTime($responseData[$field]);
+                && $responseData[$field] = DateTimeImmutable::createFromFormat(
+                    "Y-m-d P", $responseData[$field].' -03:00'
+                );
             }
 
             $responseData['opcaoPeloSimples'] = (bool) $responseData['opcaoPeloSimples'];

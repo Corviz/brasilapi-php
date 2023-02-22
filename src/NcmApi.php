@@ -69,7 +69,7 @@ class NcmApi extends ApiConsumer
     private static function convertDates(array &$ncm): void
     {
         foreach (['dataInicio', 'dataFim'] as $field) {
-            if (!$ncm[$field]) {
+            if (!empty($ncm[$field])) {
                 continue;
             }
 

@@ -7,7 +7,7 @@ use JsonSerializable;
 use ReflectionClass;
 use ReflectionException;
 
-class BaseData implements ArrayAccess, JsonSerializable
+abstract class DataTransfer implements ArrayAccess, JsonSerializable
 {
 
     /**
@@ -36,7 +36,7 @@ class BaseData implements ArrayAccess, JsonSerializable
         $arr = (array) $this;
 
         foreach ($arr as &$item) {
-            if ($item instanceof BaseData) {
+            if ($item instanceof DataTransfer) {
                 $item = $item->toArray();
             }
         }

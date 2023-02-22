@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\TaxApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class TaxData extends BaseData
+class TaxData extends DataTransfer
 {
     /**
      * @param string $nome

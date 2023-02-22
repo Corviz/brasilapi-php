@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\CptecApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class CityData extends BaseData
+class CityData extends DataTransfer
 {
     /**
      * @param string $nome

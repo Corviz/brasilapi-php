@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\BankApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class BankData extends BaseData
+class BankData extends DataTransfer
 {
     /**
      * @param string $ispb

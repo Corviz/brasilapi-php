@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\NcmApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class NcmData extends BaseData
+class NcmData extends DataTransfer
 {
     /**
      * @param string $codigo

@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\CptecApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class OceanicForecastData extends BaseData
+class OceanicForecastData extends DataTransfer
 {
     /**
      * @param string $cidade

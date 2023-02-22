@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI\Data\IbgeApi;
 
-class CityData extends \Corviz\BrasilAPI\Data\BaseData
+class CityData extends \Corviz\BrasilAPI\Data\DataTransfer
 {
     /**
      * @param string $nome

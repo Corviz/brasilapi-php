@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\FipeApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class RefTableData extends BaseData
+class RefTableData extends DataTransfer
 {
     /**
      * @param int $codigo

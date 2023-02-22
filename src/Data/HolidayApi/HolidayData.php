@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\HolidayApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class HolidayData extends BaseData
+class HolidayData extends DataTransfer
 {
     /**
      * @param DateTimeImmutable $date

@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\IbgeApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class UfData extends BaseData
+class UfData extends DataTransfer
 {
     /**
      * @param int $id

@@ -3,9 +3,9 @@
 namespace Corviz\BrasilAPI\Data\RegistroBrApi;
 
 use DateTimeImmutable;
-use \Corviz\BrasilAPI\Data\BaseData;
+use \Corviz\BrasilAPI\Data\DataTransfer;
 
-class DomainData extends BaseData
+class DomainData extends DataTransfer
 {
     /**
      * @param int $statusCode

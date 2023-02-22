@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\CepApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class CepData extends BaseData
+class CepData extends DataTransfer
 {
     /**
      * @param string $cep

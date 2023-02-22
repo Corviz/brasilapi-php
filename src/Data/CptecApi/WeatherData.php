@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\CptecApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class WeatherData extends BaseData
+class WeatherData extends DataTransfer
 {
     /**
      * @param string $codigoIcao

@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\IsbnApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class DimensionData extends BaseData
+class DimensionData extends DataTransfer
 {
     /**
      * @param float $width

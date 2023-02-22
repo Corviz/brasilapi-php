@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\CnpjApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class CnaeData extends BaseData
+class CnaeData extends DataTransfer
 {
     /**
      * @param int $codigo

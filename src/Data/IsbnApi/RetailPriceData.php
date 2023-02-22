@@ -2,7 +2,7 @@
 
 namespace Corviz\BrasilAPI\Data\IsbnApi;
 
-class RetailPriceData extends \Corviz\BrasilAPI\Data\BaseData
+class RetailPriceData extends \Corviz\BrasilAPI\Data\DataTransfer
 {
     public function __construct(
         public readonly string $currency,

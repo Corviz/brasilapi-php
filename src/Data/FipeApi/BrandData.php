@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\FipeApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class BrandData extends BaseData
+class BrandData extends DataTransfer
 {
     /**
      * @param string $nome

@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\CptecApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class OceanicForecastWaveData extends BaseData
+class OceanicForecastWaveData extends DataTransfer
 {
     public function __construct(
         public readonly float $vento,

@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\IsbnApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class IsbnData extends BaseData
+class IsbnData extends DataTransfer
 {
     /**
      * @param string $isbn

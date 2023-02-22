@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\CnpjApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class QsaData extends BaseData
+class QsaData extends DataTransfer
 {
     /**
      * @param int $identificadorDeSocio

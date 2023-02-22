@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\DddApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class DddData extends BaseData
+class DddData extends DataTransfer
 {
     /**
      * @param string $state

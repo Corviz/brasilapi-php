@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\CepApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class GeoLocationData extends BaseData
+class GeoLocationData extends DataTransfer
 {
     /**
      * @param float $latitude

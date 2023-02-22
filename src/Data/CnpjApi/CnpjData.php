@@ -2,10 +2,10 @@
 
 namespace Corviz\BrasilAPI\Data\CnpjApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 use DateTimeImmutable;
 
-class CnpjData extends BaseData
+class CnpjData extends DataTransfer
 {
     /**
      * @param string $cnpj

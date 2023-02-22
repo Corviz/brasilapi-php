@@ -2,9 +2,9 @@
 
 namespace Corviz\BrasilAPI\Data\FipeApi;
 
-use Corviz\BrasilAPI\Data\BaseData;
+use Corviz\BrasilAPI\Data\DataTransfer;
 
-class PriceData extends BaseData
+class PriceData extends DataTransfer
 {
     public function __construct(
         public readonly string $valor,

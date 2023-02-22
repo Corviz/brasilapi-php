@@ -20,7 +20,7 @@ abstract class ApiConsumer
         if (!self::$client) {
             $options = [
                 'base_uri' => 'https://brasilapi.com.br/api/',
-                'timeout' => $_ENV['BRASILAPI_TIMEOUT'] ?? 3,
+                'timeout' => $_ENV['BRASILAPI_TIMEOUT'] ?? 0,
                 'allow_redirects' => true,
             ];
 

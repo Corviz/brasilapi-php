@@ -13,7 +13,7 @@ class CepData extends DataTransfer
      * @param string $neighborhood
      * @param string $street
      * @param string $service
-     * @param ?GeoLocationData $location
+     * @param ?LocationData $location
      */
     public function __construct(
         public readonly string $cep,
@@ -22,7 +22,7 @@ class CepData extends DataTransfer
         public readonly string $neighborhood,
         public readonly string $street,
         public readonly string $service,
-        public readonly ?GeoLocationData $location = null,
+        public readonly ?LocationData $location = null,
     ) {
     }
 }

@@ -3,7 +3,8 @@
 namespace Corviz\BrasilAPI;
 
 use Corviz\BrasilAPI\Data\CepApi\CepData;
-use Corviz\BrasilAPI\Data\CepApi\GeoLocationData;
+use Corviz\BrasilAPI\Data\CepApi\CoordinatesData;
+use Corviz\BrasilAPI\Data\CepApi\LocationData;
 use GuzzleHttp\Exception\GuzzleException;
 use ReflectionException;
 
@@ -27,7 +28,8 @@ class CepApi extends ApiConsumer
 
         if ($responseData = self::parseJson($response)) {
             if (!empty($responseData['location'])) {
-                $responseData['location'] = GeoLocationData::from($responseData['location']['coordinates']);
+                $responseData['location']['coordinates'] = CoordinatesData::from($responseData['location']['coordinates']);
+                $responseData['location'] = LocationData::from($responseData['location']);
             }
 
             $data = CepData::from($responseData);

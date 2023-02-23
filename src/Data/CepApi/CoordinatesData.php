@@ -2,9 +2,7 @@
 
 namespace Corviz\BrasilAPI\Data\CepApi;
 
-use Corviz\BrasilAPI\Data\DataTransfer;
-
-class GeoLocationData extends DataTransfer
+class CoordinatesData extends \Corviz\BrasilAPI\Data\DataTransfer
 {
     /**
      * @param float $latitude
@@ -12,7 +10,7 @@ class GeoLocationData extends DataTransfer
      */
     public function __construct(
         public readonly float $latitude,
-        public readonly float $longitude
+        public readonly float $longitude,
     ) {
     }
 }

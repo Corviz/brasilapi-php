@@ -23,6 +23,7 @@ composer require corviz/brasilapi-php
 ## Environment variables
 
 `BRASILAPI_TIMEOUT` - maximum request time in seconds
+
 `BRASILAPI_PROXY` - Proxy configuration for guzzle (ip)
 
 ## Usage examples
